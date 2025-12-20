@@ -6,79 +6,24 @@ templ Home() {
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<meta name="description" content="Always laugh at the competition."/>
-			<style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-</style>
 			<title>mertens</title>
-			<style>
-       body {
-            max-width: 600px;
-            margin: 10vh auto;
-            font-size: 15.5px
-            padding: 0 20px;
-            font-family: "Space Mono", monospace;
-            font-weight: 400;
-            font-style: normal;
-            background-color: rgb(1, 1, 1);
-            color: rgb(210, 210, 223);
-            user-select: none;
-        }
-
-        .larger-image {
-display: block; 					
-margin: 0 auto; 
-    width: 250px; 
-    height: auto;
-    max-width: 100%;
-}
-        .social,
-        .name,
-        span{
-        color:rgb(187, 208, 255);
-        }
-        @media only screen and (max-width: 650px) {
-            body { width: 90vw !important; }
-        }
-        a {
-            color:rgb(187, 208, 255);
-            text-decoration: none;
-            user-select: text;
-        }
-      
-        hr {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-width: 0px;
-  height: 1px;
-}
-    </style>
+			<link rel="stylesheet" href="/static/style.css"/>
 		</head>
 		<body>
-<img src="../../assets/frieren.gif" alt="frieren" class="larger-image">
 			<main>
-				<h2 class="name">mertens</h2>
-				<hr/>
+				<h2 class="headers" class="name">mertens</h2>
 				<nav class="nav">
-					<a href="/">home </a>
-					<a href="/posts">posts</a>
+					<a class="normal_text" href="/">home</a>
+					<a class="normal_text" href="/blogs">posts</a>
+					<hr/>
 				</nav>
-				<p></p>
-				<p>Learning ML, CS & Low-Level</p>
-				<h3><span>#</span> working on:</h3>
+				<p>learning ml, cs &amp; low-level</p>
+				<h3 class="headers"><span>#</span> latest blog:</h3>
 				<ul>
-					<li>a shell using C</li>
-					<li>2D game in C</li>
+					<a href="./posts/compilers.html">Why am I using NixOS as my daily driver</a>
 				</ul>
-				<h3><span>#</span> posts:</h3>
-				//	<ul>
-				//		<li>
-				//	<a href="./posts/compilers.html">Why am I using NixOS as my daily driver</a>
-				//		</li>
-				//	</ul>
-				<br/>
 				<nav>
-					<a class="social" href="https://x.com/_blackfyre__">[twitter]</a>
-					<a class="social" href="https://github.com/mertensblackfyre">[github]</a>
+					<a class="headers" class="social" href="https://github.com/mertensblackfyre">[github]</a>
 				</nav>
 			</main>
 		</body>
