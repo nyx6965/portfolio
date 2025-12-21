@@ -38,7 +38,6 @@ func main() {
 			log.Fatal("DB is nil")
 		}
 
-		fmt.Println(string(html))
 		CreatePost(DB, "something", string(html))
 		return
 	}
